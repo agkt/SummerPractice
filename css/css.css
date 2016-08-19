@@ -1,0 +1,296 @@
+@import "reset.css";
+@font-face {
+    font-family: "Fira Sans"; /* Имя шрифта */
+    src: url(/font/FiraSans-Bold.ttf)
+}
+body {
+
+    margin: 0; /* обнуление полей по краям */
+    background: url("../img/background.png") repeat;
+    min-width: 960px;
+
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    font-size: 0;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* close commented backslash hack */
+
+.header-content, .footer-content, .footer-wrapper {
+    background: #eff3f7;
+    overflow: hidden;
+}
+
+.header-content .logo {
+    float: left;
+    margin-top: 5px;
+    margin-left: 115px;
+}
+
+.header-content .socialbut {
+    float: right;
+    margin: 35px 100px 35px 0;
+}
+
+.header-content .button {
+    margin-right: 25px;
+}
+
+.header-content .button:last-child {
+    margin-right: 0;
+}
+
+.header-content a:active {
+    display: none;
+}
+.border {
+    height: 3px;
+    background: linear-gradient(to left, #e7eff3, #1f687c, #e7eff3);
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.main-info, .experience, .education {
+    width: 70.7083333%; /* ширина контента */
+    float: right; /* всплытие вправо */
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #eff3f7;
+}
+
+.menu {
+    width: 26.00%;
+    float: left;
+
+}
+
+.container {
+    max-width: 960px;
+
+    margin: 0 auto;
+}
+
+.top-menu {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 21px;
+    border-radius: 5px;
+    background: #eff3f7;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.top-menu li {
+    margin: 0 auto;
+}
+
+.top-menu li a {
+    display: block;
+    padding: 30px 0 30px 30px;
+    text-decoration: none;
+    color: #959aa8;
+}
+
+.top-menu li a:hover {
+    border-bottom: 2px solid #3ba8c0;
+    color: #3ba8c0;
+}
+
+.top-menu li a:active {
+    background: #3ba8c0;
+    color: #ffffff;
+
+}
+
+.top-menu ul:active {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.top-menu li:first-child a:active {
+    background: #3ba8c0;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 21px;
+}
+
+.menu .bottom-menu {
+    font-family: 'Fira Sans', sans-serif;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+h4 {
+    width: 100%;
+    color: white;
+    font-size: 21px;
+    background: #3ba8c0;
+    padding: 10px 0 10px 20px;
+}
+
+.bottom-menu a {
+    display: block;
+    margin-bottom: -1px;
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.bottom-menu a:hover {
+    text-decoration: underline;
+}
+
+.bottom-menu .contacts {
+    background: #3ba8c0;
+    font-size: 21px;
+    text-align: left;
+}
+
+.bottom-menu .number {
+    background: #48cbe8;
+    font-size: 17px;
+}
+
+.bottom-menu .mail {
+    background: #41b9d4;
+    font-size: 17px;
+}
+
+.bottom-menu .skype {
+    background: #51daf8;
+    font-size: 17px;
+}
+
+.bottom-menu .img {
+    float: left;
+    padding: 12px 20px 0 15px;
+}
+
+h3 {
+    display: inline-block;
+    padding: 20px;
+    color: #3ba8c0;
+    font-size: 27px;
+    border-bottom: 2px solid #3ba8c0;
+    margin-bottom: 35px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    background: #f6fbfd;
+    border-radius: 50%;
+    float: left;
+    margin-right: 25px;
+    margin-left: 50px;
+}
+
+.main-info li {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #4a545d;
+    overflow: hidden;
+}
+
+.main-info span:last-child {
+    font-size: 15px;
+}
+
+.main-info ul > li > span:first-child {
+    float: left;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.main-info ul {
+    padding-right: 30px;
+}
+
+.experience li {
+    margin-bottom: 10px;
+}
+
+.place {
+    font-size: 17px;
+    color: #4a545d;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.case {
+    float: left;
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+.experience .date {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #4a545d;
+}
+
+.education {
+    margin-bottom: 40px;
+}
+
+.education li {
+    margin-bottom: 10px;
+}
+
+.education .date {
+    padding-left: 130px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #4a545d;
+}
+
+.footer-content {
+    font-family: 'Fira Sans', sans-serif;
+    height: 80px;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: middle
+}
+
+.lock {
+    float: left;
+    margin-top: 10px;
+}
+
+.footer-content p {
+    line-height: 80px;
+    font-size: 13px;
+}
+

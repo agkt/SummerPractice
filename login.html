@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href=//code.cdn.mozilla.net/fonts/fira.css» rel=«stylesheet» type=«text/css»/>
+
+</head>
+<body>
+<div class="login-form">
+    <div class="header-login">
+        <h3>Авторизуйтесь</h3>
+    </div>
+
+    <div class="authorization">
+        <div class="form-wrapper">
+            <span class="label">Введите логин</span>
+            <label class="name" for="i1">Логин</label>
+            <input type="text" class="form-wrapper__input" name="name" id="i1" placeholder="Введите логин">
+        </div>
+        <div class="form-wrapper">
+            <span class="label">Введите пароль</span>
+            <label class="name" for="i2">Пароль</label>
+            <input type="text" class="form-wrapper__input" name="name" id="i2" placeholder="Введите пароль">
+        </div>
+        <div><button type="submit" class="button">Войти</button></div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="border">
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <a href="#" class="lock"><img src="img/lock.png" alt="lock"></a>
+            <p>&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+        </div>
+    </div>
+</footer>
+
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script>
+
+    var
+            input = $('.form-wrapper__input');
+    input.focusout(function () {
+        var text = $(this).val();
+        if(text == '') {
+            $(this).closest('.form-wrapper').find('.label').fadeIn();
+        }
+        else {
+            $(this).closest('.form-wrapper').find('.label').fadeOut();
+        }
+    });
+</script>
+
+</body>
+</html>

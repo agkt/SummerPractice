@@ -1,0 +1,129 @@
+.my-work {
+    width: 70.7083333%; /* ширина контента */
+    float: right; /* всплытие вправо */
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #eff3f7;
+    height: 840px;
+}
+
+.grid {
+    margin-left: 30px;
+}
+
+.column {
+    float: left;
+    padding: 0;
+}
+.column >.name {
+    color: #292c34;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.column .text, .p-text {
+    display: block;
+    text-align: center;
+    margin-right: 30px;
+
+}
+.column .p-text {
+    font-size: 15px;
+    color:#4a545d;
+    margin-bottom: 50px;
+}
+.column .text {
+    font-size: 13px;
+    color: #3ba8c0;
+    margin-bottom: 20px;
+}
+.column .site {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 22px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.column{
+    padding: 0;
+}
+
+.column .column-img {
+    width: 181px;
+    overflow: hidden;
+    height: 127px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border: 2px solid #68bbce;
+    border-radius: 5px;
+}
+
+.wrapper {
+    max-width: 610px
+}
+
+.bg {
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56,126,163,.5);
+}
+
+.bg:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.bg > span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+.column-new {
+    width: 181px;
+    overflow: hidden;
+    height: 127px;
+    position: relative;
+    float: left;
+    border: 2px dashed #68bbce;
+    border-radius: 5px;
+}
+
+.new-project {
+    background: #ebf9fd;
+    border: 1px dashed #00abc3;
+    width: 180px;
+    height: 128px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.new-project img {
+    margin-top: 35px;
+}
+
+.new-project .p-text {
+    color: #3ba8c0;
+    font-size: 14px;
+    margin-left: 32px;
+    margin-top: 10px;
+    position: absolute;
+}

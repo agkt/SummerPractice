@@ -1,0 +1,97 @@
+@import "reset.css";
+@font-face {
+    font-family: "Fira Sans";
+    src: url(/font/FiraSans-Bold.ttf)
+}
+
+.main-info, .experience, .education {
+    width: 70.7083333%; /* ширина контента */
+    float: right; /* всплытие вправо */
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #eff3f7;
+}
+
+
+.headline {
+    display: inline-block;
+    padding: 20px;
+    color: #3ba8c0;
+    font-size: 27px;
+    border-bottom: 2px solid #3ba8c0;
+    margin-bottom: 35px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    background: #f6fbfd;
+    border-radius: 50%;
+    float: left;
+    margin-right: 25px;
+    margin-left: 50px;
+}
+
+.main-info li {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #4a545d;
+    overflow: hidden;
+}
+
+.main-info span:last-child {
+    font-size: 15px;
+}
+
+.main-info ul > li > span:first-child {
+    float: left;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.main-info ul {
+    padding-right: 30px;
+}
+
+.experience li {
+    margin-bottom: 10px;
+}
+
+.place {
+    font-size: 17px;
+    color: #4a545d;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.case {
+    float: left;
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+.experience .date {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #4a545d;
+}
+
+.education {
+    margin-bottom: 40px;
+}
+
+.education li {
+    margin-bottom: 10px;
+}
+
+.education .date {
+    padding-left: 130px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #4a545d;
+}
+
+
+

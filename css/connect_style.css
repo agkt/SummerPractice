@@ -1,0 +1,100 @@
+.connect-me {
+    width: 70.7083333%; /* ширина контента */
+    float: right; /* всплытие вправо */
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #eff3f7;
+    height: 840px;
+}
+
+.header-connect {
+    background: #48cbe8;
+    border-bottom: 18px solid #67dffa;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.header-connect h3 {
+    font-size: 27px;
+    color: #fff;
+}
+
+.form .sign {
+    border-radius: 5px;
+    border: 1px solid #48cbe8;
+    width: 47.146402%;
+    height: 35px;
+    color: #666;
+    margin: 10px 0 20px 0;
+}
+
+.form .sign:last-child {
+    float: right;
+}
+
+.form {
+    width: 403px;
+    margin: 0 auto;
+}
+
+.form .mail {
+    border-radius: 5px;
+    border: 1px solid #48cbe8;
+    width: 100%;
+    height: 180px;
+    color: #666;
+    margin: 10px 0 20px 0;
+}
+
+.form .name, .e-mail {
+    width: 47.146402%;
+    font-size: 19px;
+    color: #959aa8;
+}
+
+.form .e-mail {
+    float: right;
+}
+
+::-webkit-input-placeholder {
+    color: #48cbe8;
+}
+
+::-moz-placeholder {
+    color: #48cbe8;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #48cbe8;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #48cbe8;
+}
+
+.form p {
+    font-size: 17px;
+    color: #959aa8;
+    margin-bottom: 10px;
+}
+
+.form .button {
+    margin-top: 20px;
+    width: 30.7394541%;
+    height: 33px;
+    background-color: #48cbe8;
+    border:0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 19px;
+}
+
+.form .button:last-child {
+    float: right;
+    background-color: #849db5;
+}

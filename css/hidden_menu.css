@@ -1,0 +1,103 @@
+.hidden-menu .top-menu {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 21px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.hidden-menu .top-menu li {
+    margin: 0 auto;
+}
+
+.hidden-menu .top-menu li a {
+    border-bottom: 2px solid transparent;
+    display: block;
+    padding: 20px 0 20px 20px;
+    text-decoration: none;
+    color: #959aa8;
+}
+
+.hidden-menu .top-menu li a:hover {
+    border-bottom: 2px solid #3ba8c0;
+    color: #3ba8c0;
+}
+
+.hidden-menu .top-menu li a:active {
+    background: #3ba8c0;
+    color: #ffffff;
+}
+
+.hidden-menu .top-menu ul:active {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hidden-menu .top-menu li:first-child a:active {
+    background: #3ba8c0;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 21px;
+}
+
+
+
+.hidden-menu nav {
+    border-bottom: 0;
+}
+.hidden-menu nav ul {
+    display: none;
+    height: auto;
+}
+.hidden-menu nav a#pull {
+    float: right;
+    display: block;
+    position: relative;
+    width: 47px;
+    height: 47px;
+}
+.hidden-menu nav a#pull:after {
+    content:"";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.hidden-menu nav li {
+    display: block;
+    float: none;
+    width: 100%;
+}
+
+.hidden-menu .top-menu {
+    width: 239px;
+    padding-left: 0;
+    float: right;
+
+}
+
+.hidden-menu .top-menu ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 50px;
+    background: #eff3f7;
+}
+
+.hidden-menu ul {
+    position: fixed;
+    width: 230px;
+    -webkit-box-shadow: 6px 6px 30px 0px rgba(50, 50, 50, 0.33);
+    -moz-box-shadow:    6px 6px 30px 0px rgba(50, 50, 50, 0.33);
+    box-shadow:         6px 6px 30px 0px rgba(50, 50, 50, 0.33);
+}
+
+.hidden-menu {
+    position: absolute;
+}
+
+.hidden-menu .top-menu {
+    margin-left: 90px; margin-top: 40px;
+}
+

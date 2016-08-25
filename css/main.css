@@ -42,6 +42,10 @@ ul {
     float: left;
     margin-top: 5px;
 }
+.header-content .wrap {
+    width: 340px;
+    float: right;
+}
 
 .socialbut {
     float: right;
@@ -63,10 +67,6 @@ ul {
 
 .btn:last-child {
     margin: 0;
-}
-
-.btn-mob:last-child {
-    margin-right: 0;
 }
 
 .header-content a:active {
@@ -241,13 +241,19 @@ h4 {
     line-height: 80px;
     font-size: 13px;
 }
+.hidden-menu {
+    z-index: 3;
+}
+.visible {
+    position: absolute;
+    z-index: 5;
+}
 
 /*FOOTER closed*/
 
 /*MEDIA*/
 @media screen and (min-width: 770px) {
-
-    .header-content .btn:last-child {
+    .hidden-menu {
         display: none;
     }
 
@@ -340,7 +346,9 @@ h4 {
     .case {
         margin-left: 43%;
     }
-
+    .btn-mob:last-child {
+        margin-right: 0;
+    }
     .mob {
         line-height: 70px;
         float: none;
@@ -354,6 +362,13 @@ h4 {
 
     .footer-content p {
         font-size: 10px;
+    }
+
+    .top-menu {
+        display: none;
+    }
+    .visible {
+        display: none;
     }
 }
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Connect with me</title>
+    <link rel="stylesheet" href="css/hidden_menu.css">
     <link rel="stylesheet" href="css/connect_style.css">
     <link rel="stylesheet" href="css/main.css">
     <link href=//code.cdn.mozilla.net/fonts/fira.css» rel=«stylesheet» type=«text/css»/>
@@ -13,25 +14,39 @@
 
 <div class="header">
     <div class="header-content">
-        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-        <div class="socialbut">
-            <button class="btn"><img src="img/vk.png" width="47" height="47"
-                                     onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
-                                     onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/>
-            </button>
-            <button class="btn"><img src="img/twitter.png" width="47" height="47"
-                                     onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
-                                     onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;"
-                                     alt="twitter"></button>
-            <button class="btn"><img src="img/facebook.png" width="47" height="47"
-                                     onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
-                                     onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;"
-                                     alt="facebook"></button>
-            <button class="btn"><img src="img/github.png" width="47" height="47"
-                                     onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
-                                     onmouseout="this.src='img/github.png'; this.width=47;this.height=47;" alt="github">
-            </button>
-            <button class="btn"><img src="img/menu.png" alt="menu"></button>
+        <div class="logo"><img src="img/logo.png" alt="logo"></div>
+        <div class="clearfix wrap">
+            <div class="socialbut visible">
+                <button class="btn"><img src="img/vk.png" width="47" height="47"
+                                         onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/>
+                </button>
+                <button class="btn"><img src="img/twitter.png" width="47" height="47"
+                                         onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;"
+                                         alt="twitter"></button>
+                <button class="btn"><img src="img/facebook.png" width="47" height="47"
+                                         onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;"
+                                         alt="facebook"></button>
+                <button class="btn"><img src="img/github.png" width="47" height="47"
+                                         onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/github.png'; this.width=47;this.height=47;"
+                                         alt="github">
+                </button>
+
+            </div>
+
+            <div class="clearfix hidden-menu">
+                <nav class="top-menu clearfix">
+                    <a href="#" id="pull"><img src="img/menu.png"></a>
+                    <ul class="clearfix">
+                        <li><a href="#">Обо мне</a></li>
+                        <li><a href="#">Мои работы</a></li>
+                        <li><a href="#">Связаться со мной</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
     <div class="border">
@@ -73,7 +88,7 @@
                 <div class="sign">
                     <p class="name" for="i1">Имя</p>
                     <input class="sign" type="text" name="name" id="i1" placeholder="Как к вам обращаться">
-                    </div>
+                </div>
                 <div class="sign">
                     <p class="e-mail" for="i1">E-mail</p>
                     <input type="text" name="e-mail" id="i2" placeholder="Куда мне писать">
@@ -149,5 +164,28 @@
         </div>
     </div>
 </footer>
+
+<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        var pull = $('#pull');
+        menu = $('nav ul');
+        menuHeight = menu.height();
+
+        $(pull).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });
+
+</script>
 </body>
 </html>

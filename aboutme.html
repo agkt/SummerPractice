@@ -2,31 +2,35 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>About me</title>
     <link rel="stylesheet" href="css/aboutme_style.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href=//code.cdn.mozilla.net/fonts/fira.css» rel= «stylesheet» type= «text/css» />
-
+    <link href=//code.cdn.mozilla.net/fonts/fira.css» rel=«stylesheet» type=«text/css»/>
 </head>
 <body>
 
 <div class="header">
     <div class="header-content">
-        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+        <div class="logo"><img src="img/logo.png" alt="logo"></div>
         <div class="socialbut">
-            <a href="#" class="button"><img src="img/vk.png" width="47" height="47"
-                                            onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/></a>
-            <a href="#" class="button"><img src="img/twitter.png" width="47" height="47"
-                                            onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;" alt="twitter"></a>
-            <a href="#" class="button"><img src="img/facebook.png" width="47" height="47"
-                                            onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;" alt="facebook"></a>
-            <a href="#" class="button"><img src="img/github.png" width="47" height="47"
-                                            onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/github.png'; this.width=47;this.height=47;" alt="github"></a>
-
+            <button class="btn"><img src="img/vk.png" width="47" height="47"
+                                     onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/>
+            </button>
+            <button class="btn"><img src="img/twitter.png" width="47" height="47"
+                                     onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;"
+                                     alt="twitter"></button>
+            <button class="btn"><img src="img/facebook.png" width="47" height="47"
+                                     onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;"
+                                     alt="facebook"></button>
+            <button class="btn"><img src="img/github.png" width="47" height="47"
+                                     onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/github.png'; this.width=47;this.height=47;" alt="github">
+            </button>
+            <button class="btn"><img src="img/menu.png" alt="menu"></button>
         </div>
     </div>
     <div class="border">
@@ -43,12 +47,18 @@
         </ul>
         <ul class="bottom-menu">
             <h4> Контакты</h4>
-            <li><a class="mail" href="#mail">pochta@mail.ru
-                <img class="img" src="img/mail.png" alt="mail"></a></li>
-            <li><a class="number" href="#number">+7912342323
-                <img class="img" src="img/number.png" alt="number"></a></li>
-            <li><a class="skype" href="#skype">nickname
-                <img class="img" src="img/skype.png" alt="skype"></a></li>
+            <li class="mail">
+                <a href="#mail">pochta@mail.ru
+                    <img class="img" src="img/mail.png" alt="mail"></a>
+            </li>
+            <li class="number">
+                <a href="#number">+7912342323
+                    <img class="img" src="img/number.png" alt="number"></a>
+            </li>
+            <li class="skype">
+                <a href="#skype">nickname
+                    <img class="img" src="img/skype.png" alt="skype"></a>
+            </li>
         </ul>
     </div>
 
@@ -77,14 +87,12 @@
                 </li>
                 <li>
                     <span>Ключевые навыки:</span>
-                    <ul>
-                        <li>
-                            <img src="img/html.png" alt="html">
-                            <img src="img/css.png" alt="css">
-                            <img src="img/js.png" alt="js">
-                            <img src="img/gulp.png" alt="gulp">
-                            <img src="img/git.png" alt="git">
-                        </li>
+                    <ul class="skills">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>gulp</li>
+                        <li>git</li>
                     </ul>
                 </li>
             </ul>
@@ -96,18 +104,14 @@
         <div>
             <ul>
                 <li>
-                    <span class="place">"ИП Боровицкий" - Продавец дисков</span>
                     <span class="case"><img src="img/case.png" alt="case"></span>
-                </li>
-                <li class="date">
-                    <span>Сентябрь 2005 - Август 2008</span>
+                    <p class="place">"ИП Боровицкий" - Продавец дисков</p>
+                    <p class="date">Сентябрь 2005 - Август 2008</p>
                 </li>
                 <li>
-                    <span class="place">"ООО Системы безопастности" - Системный администратор</span>
                     <span class="case"><img src="img/case.png" alt="case"></span>
-                </li>
-                <li class="date">
-                    <span>Июнь 2008 - Июль 2010</span>
+                    <p class="place">"ООО Системы безопастности" - Системный администратор</p>
+                    <p class="date">Июнь 2008 - Июль 2010</p>
                 </li>
             </ul>
         </div>
@@ -118,24 +122,57 @@
         <div>
             <ul>
                 <li>
-                    <span class="place">Незаконченное высшее. СПБГУ ИТМО</span>
                     <span class="case"><img src="img/educ.png" alt="educ"></span>
-                </li>
-                <li class="date">
-                    <span>Октябрь 2012 - по настоящее время</span>
+                    <p class="place">Незаконченное высшее. СПБГУ ИТМО</p>
+                    <p class="date">Октябрь 2012 - по настоящее время</p>
                 </li>
                 <li>
-                    <span class="place">Курсы Loftschool.ru</span>
                     <span class="case"><img src="img/courses.png" alt="courses"></span>
-                </li>
-                <li class="date">
-                    <span>Ноябрь 2014 - по настоящее время</span>
+                    <p class="place">Курсы Loftschool.ru</p>
+                    <p class="date">Ноябрь 2014 - по настоящее время</p>
                 </li>
             </ul>
         </div>
     </div>
-</div>
+    <div>
+        <ul class="bottom-menu new">
+            <li class="mail">
+                <a href="#mail">pochta@mail.ru
+                    <img class="img" src="img/mail.png" alt="mail"></a>
+            </li>
+            <li class="number">
+                <a href="#number">+7912342323
+                    <img class="img" src="img/number.png" alt="number"></a>
+            </li>
+            <li class="skype">
+                <a href="#skype">nickname
+                    <img class="img" src="img/skype.png" alt="skype"></a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div class="socialbut mob">
+            <button class="btn-mob"><img src="img/vk.png" width="47" height="47"
+                                         onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/>
+            </button>
+            <button class="btn-mob"><img src="img/twitter.png" width="47" height="47"
+                                         onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;"
+                                         alt="twitter"></button>
+            <button class="btn-mob"><img src="img/facebook.png" width="47" height="47"
+                                         onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;"
+                                         alt="facebook"></button>
+            <button class="btn-mob"><img src="img/github.png" width="47" height="47"
+                                         onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/github.png'; this.width=47;this.height=47;"
+                                         alt="github">
+            </button>
+        </div>
+    </div>
 
+</div>
 <div class="footer">
     <div class="border">
     </div>

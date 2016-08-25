@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Connect with me</title>
     <link rel="stylesheet" href="css/connect_style.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,22 +15,23 @@
     <div class="header-content">
         <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
         <div class="socialbut">
-            <a href="#" class="button"><img src="img/vk.png" width="47" height="47"
-                                            onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/></a>
-            <a href="#" class="button"><img src="img/twitter.png" width="47" height="47"
-                                            onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;"
-                                            alt="twitter"></a>
-            <a href="#" class="button"><img src="img/facebook.png" width="47" height="47"
-                                            onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;"
-                                            alt="facebook"></a>
-            <a href="#" class="button"><img src="img/github.png" width="47" height="47"
-                                            onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
-                                            onmouseout="this.src='img/github.png'; this.width=47;this.height=47;"
-                                            alt="github"></a>
-
+            <button class="btn"><img src="img/vk.png" width="47" height="47"
+                                     onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/>
+            </button>
+            <button class="btn"><img src="img/twitter.png" width="47" height="47"
+                                     onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;"
+                                     alt="twitter"></button>
+            <button class="btn"><img src="img/facebook.png" width="47" height="47"
+                                     onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;"
+                                     alt="facebook"></button>
+            <button class="btn"><img src="img/github.png" width="47" height="47"
+                                     onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
+                                     onmouseout="this.src='img/github.png'; this.width=47;this.height=47;" alt="github">
+            </button>
+            <button class="btn"><img src="img/menu.png" alt="menu"></button>
         </div>
     </div>
     <div class="border">
@@ -46,12 +48,18 @@
         </ul>
         <ul class="bottom-menu">
             <h4> Контакты</h4>
-            <li><a class="mail" href="#mail">pochta@mail.ru
-                <img class="img" src="img/mail.png" alt="mail"></a></li>
-            <li><a class="number" href="#number">+7912342323
-                <img class="img" src="img/number.png" alt="number"></a></li>
-            <li><a class="skype" href="#skype">nickname
-                <img class="img" src="img/skype.png" alt="skype"></a></li>
+            <li class="mail">
+                <a href="#mail">pochta@mail.ru
+                    <img class="img" src="img/mail.png" alt="mail"></a>
+            </li>
+            <li class="number">
+                <a href="#number">+7912342323
+                    <img class="img" src="img/number.png" alt="number"></a>
+            </li>
+            <li class="skype">
+                <a href="#skype">nickname
+                    <img class="img" src="img/skype.png" alt="skype"></a>
+            </li>
         </ul>
     </div>
 
@@ -61,15 +69,18 @@
         </div>
 
         <form class="form">
-            <div>
-                <label class="name" for="i1">Имя</label>
-                <label class="e-mail" for="i1">E-mail</label>
-
-                <div>
-                    <input type="text" class="sign" name="name" id="i1" placeholder="Как к вам обращаться">
-                    <input type="text" class="sign" name="e-mail" id="i2" placeholder="Куда мне писать">
+            <div class="clearfix">
+                <div class="sign">
+                    <p class="name" for="i1">Имя</p>
+                    <input class="sign" type="text" name="name" id="i1" placeholder="Как к вам обращаться">
+                    </div>
+                <div class="sign">
+                    <p class="e-mail" for="i1">E-mail</p>
+                    <input type="text" name="e-mail" id="i2" placeholder="Куда мне писать">
                 </div>
+
             </div>
+
             <div>
                 <label class="name" for="i3">Сообщение</label>
                 <textarea name="comment" class="mail" id="i3" placeholder="Кратко в чём суть"></textarea>
@@ -79,17 +90,54 @@
                 <div>
                     <img src="img/code.png" alt="code">
 
-                    <input type="text" class="sign" name="name" id="i4" placeholder="Введите код">
+                    <input type="text" class="code" name="name" id="i4" placeholder="Введите код">
                 </div>
             </div>
-            <div>
+            <div class="clearfix">
                 <button type="submit" class="button">Отправить</button>
                 <button type="submit" class="button">Очистить</button>
             </div>
         </form>
     </div>
-</div>
 
+    <div>
+        <ul class="bottom-menu new">
+            <li class="mail">
+                <a href="#mail">pochta@mail.ru
+                    <img class="img" src="img/mail.png" alt="mail"></a>
+            </li>
+            <li class="number">
+                <a href="#number">+7912342323
+                    <img class="img" src="img/number.png" alt="number"></a>
+            </li>
+            <li class="skype">
+                <a href="#skype">nickname
+                    <img class="img" src="img/skype.png" alt="skype"></a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div class="socialbut mob">
+            <button class="btn-mob"><img src="img/vk.png" width="47" height="47"
+                                         onmouseover="this.src='img/vkhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/vk.png'; this.width=47;this.height=47;" alt="vk"/>
+            </button>
+            <button class="btn-mob"><img src="img/twitter.png" width="47" height="47"
+                                         onmouseover="this.src='img/twitterhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/twitter.png'; this.width=47;this.height=47;"
+                                         alt="twitter"></button>
+            <button class="btn-mob"><img src="img/facebook.png" width="47" height="47"
+                                         onmouseover="this.src='img/facebookhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/facebook.png'; this.width=47;this.height=47;"
+                                         alt="facebook"></button>
+            <button class="btn-mob"><img src="img/github.png" width="47" height="47"
+                                         onmouseover="this.src='img/githubhover.png'; this.width=47;this.height=47;"
+                                         onmouseout="this.src='img/github.png'; this.width=47;this.height=47;"
+                                         alt="github">
+            </button>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="border">

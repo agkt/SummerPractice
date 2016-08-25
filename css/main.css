@@ -1,12 +1,14 @@
+/*MAIN*/
 @import "reset.css";
+
 @font-face {
     font-family: "Fira Sans";
     src: url(/font/FiraSans-Bold.ttf)
 }
+
 body {
     margin: 0;
     background: url("../img/background.png") repeat;
-    min-width: 960px;
 }
 
 ul {
@@ -25,31 +27,52 @@ ul {
     color: #3ba8c0;
     font-size: 27px;
     border-bottom: 2px solid #3ba8c0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
+
+/*MAIN closed*/
+
 /*HEADER*/
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .header-content .logo {
     float: left;
     margin-top: 5px;
-    margin-left: 115px;
 }
 
-.header-content .socialbut {
+.socialbut {
     float: right;
-    margin: 35px 100px 35px 0;
+    line-height: 116px;
 }
 
-.header-content .button {
+.btn, .btn-mob {
     margin-right: 25px;
+    width: 47px;
+    border-radius: 50%;
+    height: 47px;
+    border: 0;
+    padding: 0;
+    background: inherit;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
 }
 
-.header-content .button:last-child {
+.btn:last-child {
+    margin: 0;
+}
+
+.btn-mob:last-child {
     margin-right: 0;
 }
 
 .header-content a:active {
     display: none;
 }
+
 .border {
     height: 3px;
     background: linear-gradient(to left, #e7eff3, #1f687c, #e7eff3);
@@ -57,9 +80,10 @@ ul {
 
 .header {
     margin-bottom: 40px;
+    background: #eff3f7;
 }
-/*HEADER closed*/
 
+/*HEADER closed*/
 
 /*NAVIGATION*/
 .clearfix:after {
@@ -107,6 +131,7 @@ ul {
 }
 
 .top-menu li a {
+    border-bottom: 2px solid transparent;
     display: block;
     padding: 30px 0 30px 30px;
     text-decoration: none;
@@ -184,12 +209,17 @@ h4 {
     font-size: 17px;
 }
 
+.bottom-menu a {
+    width: 185px;
+    margin: 0 auto;
+}
+
 .bottom-menu .img {
     float: left;
-    padding: 12px 20px 0 15px;
+    padding: 12px 20px 0 0;
 }
-/*NAVIGATION closed*/
 
+/*NAVIGATION closed*/
 
 /*FOOTER*/
 .footer-content {
@@ -202,7 +232,7 @@ h4 {
     vertical-align: middle
 }
 
-.lock {
+.footer-content .lock {
     float: left;
     margin-top: 10px;
 }
@@ -211,4 +241,120 @@ h4 {
     line-height: 80px;
     font-size: 13px;
 }
+
 /*FOOTER closed*/
+
+/*MEDIA*/
+@media screen and (min-width: 770px) {
+
+    .header-content .btn:last-child {
+        display: none;
+    }
+
+    .bottom-menu.new {
+        display: none;
+    }
+
+    .mob {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 485px) and (max-width: 769px) {
+
+    .menu {
+        display: none;
+    }
+
+    .mob {
+        display: none;
+    }
+
+    .main-info .skills {
+        width: 60%;
+    }
+
+    .bottom-menu .new {
+        font-family: 'Fira Sans', sans-serif;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .new li {
+        font-family: 'Fira Sans', sans-serif;
+        width: 33.203125%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .footer-content .lock {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 485px) {
+
+    .menu {
+        display: none;
+    }
+
+    .header-content {
+        padding: 0 0 5px 5px;
+    }
+
+    .logo {
+        width: 44px;
+        height: 47px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .btn:last-child {
+        display: block;
+    }
+
+    .btn img {
+        margin-top: 5px;
+    }
+
+    .headline {
+        display: inherit;
+        padding: 0;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 15px;
+        border: 0;
+    }
+
+    .new li {
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    .case {
+        margin-left: 43%;
+    }
+
+    .mob {
+        line-height: 70px;
+        float: none;
+        margin: 0 auto;
+        width: 275px;
+    }
+
+    .footer-content .lock {
+        display: none;
+    }
+
+    .footer-content p {
+        font-size: 10px;
+    }
+}
+
+/*MEDIA closed*/

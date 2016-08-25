@@ -6,7 +6,6 @@
     border-radius: 5px;
     overflow: hidden;
     background: #eff3f7;
-    height: 840px;
 }
 
 .header-connect {
@@ -20,19 +19,34 @@
 .header-connect h3 {
     font-size: 27px;
     color: #fff;
+    font-weight: 300;
 }
 
-.form .sign {
+.sign {
+    width: 190px;
+    float: left;
+}
+
+.sign:last-child {
+    float: right;
+}
+
+.sign input {
     border-radius: 5px;
     border: 1px solid #48cbe8;
-    width: 47.146402%;
+    width: 98%;
     height: 35px;
     color: #666;
     margin: 10px 0 20px 0;
 }
 
-.form .sign:last-child {
+.form .code {
     float: right;
+    border-radius: 5px;
+    border: 1px solid #48cbe8;
+    height: 35px;
+    color: #666;
+    margin: 10px 0 20px 0;
 }
 
 .form {
@@ -43,7 +57,7 @@
 .form .mail {
     border-radius: 5px;
     border: 1px solid #48cbe8;
-    width: 100%;
+    width: 98%;
     height: 180px;
     color: #666;
     margin: 10px 0 20px 0;
@@ -53,10 +67,6 @@
     width: 47.146402%;
     font-size: 19px;
     color: #959aa8;
-}
-
-.form .e-mail {
-    float: right;
 }
 
 ::-webkit-input-placeholder {
@@ -78,17 +88,17 @@
 }
 
 .form p {
-    font-size: 17px;
+    font-size: 19px;
     color: #959aa8;
     margin-bottom: 10px;
 }
 
 .form .button {
     margin-top: 20px;
-    width: 30.7394541%;
+    margin-bottom: 40px;
     height: 33px;
     background-color: #48cbe8;
-    border:0;
+    border: 0;
     border-radius: 5px;
     color: #fff;
     font-size: 19px;
@@ -98,3 +108,79 @@
     float: right;
     background-color: #849db5;
 }
+
+/*MEDIA*/
+@media screen and (min-width: 770px) {
+    .connect-me {
+        height: 840px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+
+    .connect-me {
+        margin: 0 auto;
+        width: 91%;
+        float: none;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+
+    .connect-me h3 {
+        font-size: 19px;
+    }
+
+    .header-connect {
+        padding: 30px 0;
+        margin-bottom: 15px;
+    }
+
+    .form {
+        width: 88%;
+    }
+
+    .form .e-mail {
+        float: left;
+    }
+
+    .form .mail {
+        height: 100px;
+    }
+
+    .name, .e-mail {
+        width: 98%;
+    }
+
+    .form p {
+        font-size: 15px;
+    }
+
+    .form .name, .e-mail {
+        font-size: 15px;
+    }
+
+    .form img {
+        width: 50%;
+        height: 73px;
+    }
+
+    .form .code {
+        width: 42%;
+    }
+
+    .sign {
+        width: 100%;
+    }
+
+    .sign:last-child {
+        float: left;
+    }
+
+    .button {
+        float: left;
+    }
+}
+
+/*MEDIA closed*/

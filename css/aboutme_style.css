@@ -1,4 +1,5 @@
 @import "reset.css";
+
 @font-face {
     font-family: "Fira Sans";
     src: url(/font/FiraSans-Bold.ttf)
@@ -12,16 +13,6 @@
     border-radius: 5px;
     overflow: hidden;
     background: #eff3f7;
-}
-
-
-.headline {
-    display: inline-block;
-    padding: 20px;
-    color: #3ba8c0;
-    font-size: 27px;
-    border-bottom: 2px solid #3ba8c0;
-    margin-bottom: 35px;
 }
 
 .photo {
@@ -47,12 +38,23 @@
 
 .main-info ul > li > span:first-child {
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
     font-weight: 600;
 }
 
-.main-info ul {
-    padding-right: 30px;
+.skills {
+    overflow: hidden;
+}
+
+.skills li {
+    float: left;
+    background: -webkit-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+    /* background: linear-gradient(#3ba8c0 50%, #2e8ca2 50%); */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
 }
 
 .experience li {
@@ -63,7 +65,7 @@
     font-size: 17px;
     color: #4a545d;
     overflow: hidden;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .case {
@@ -93,5 +95,51 @@
     color: #4a545d;
 }
 
+/*MEDIA*/
+@media screen and (min-width: 320px) and (max-width: 769px) {
 
+    .main-info, .experience, .education {
+        margin: 0 auto;
+        width: 91%;
+        float: none;
+        margin-bottom: 25px;
+    }
 
+}
+
+@media screen and (max-width: 485px) {
+    .main-info span {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5px
+    }
+
+    .main-info .skills {
+        overflow: visible;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .main-info .photo {
+        float: none;
+        margin: 30px auto;
+    }
+
+    .case {
+        float: none;
+    }
+
+    .experience .date, .place {
+        padding: 0;
+        text-align: center;
+    }
+
+    .education .date, .place {
+        padding: 0;
+        text-align: center;
+    }
+
+}
+
+/*MEDIA closed*/
